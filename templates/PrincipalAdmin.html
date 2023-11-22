@@ -47,15 +47,15 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIfw6sh1BkF1XQkPPnIcTsnLPvNqXtGe0hjRZj_K_wr1u9qxFYbDtIKycrFz_MeERwfMI&usqp=CAU" alt="" width="60" height="42" class="d-inline-block align-text-top">
                     Bienvenido Administrador
                     
-                    <a href="{{ url_for('logout') }}" class="volver-button">salir</a>
+                    <a href="{{ url_for('main.logout') }}" class="volver-button">salir</a>
                   </div>
                   <div class="row" style="max-width: 80rem; margin-top: 12%;margin-bottom: 5%; margin-left: 15%;margin-right: 5%;">
   <div class="col-sm-6" >
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Optometras</h5>
-        <p class="card-text">Da click para consultar optometras disponibles</p>
-        <a href="" class="btn btn-primary">Optometras</a>
+        <p class="card-text">Da click para consultar optometras disponibles y registrar</p>
+        <a href="{{ url_for('admin.optometras') }}" class="btn btn-primary">Optometras</a>
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@
       <div class="card-body">
         <h5 class="card-title">Pacientes Registrado</h5>
         <p class="card-text">Da click para consultar pacientes que han sido registrados</p>
-        <a href="" class="btn btn-primary">Pacientes registrados</a>
+        <a href="{{ url_for('admin.pacientes') }}" class="btn btn-primary">Pacientes registrados</a>
       </div>
     </div>
   </div>
@@ -74,8 +74,28 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Inventario</h5>
-        <p class="card-text">Da click para consultar Inventaro</p>
-        <a href="../controlador/controlador_consultartrabajadores.php" class="btn btn-primary">Inventario</a>
+        <p class="card-text">Da click para consultar inventario</p>
+        <a href="{{ url_for('admin.inventario') }}" class="btn btn-primary">Inventario</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Citas</h5>
+        <p class="card-text">Da click para consultar Citas</p>
+        <a href="{{ url_for('admin.eleccion_citas') }}" class="btn btn-primary">Citas</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="max-width: 80rem; margin-top: 5%;margin-bottom: 5%; margin-left: 15%;margin-right: 5%;">
+  <div class="col-sm-6" >
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Agendas</h5>
+        <p class="card-text">Da click para consultar agendas</p>
+        <a href="{{ url_for('admin.agendas') }}" class="btn btn-primary">Agendas</a>
       </div>
     </div>
   </div>
@@ -84,7 +104,7 @@
       <div class="card-body">
         <h5 class="card-title">Ventas</h5>
         <p class="card-text">Da click para consultar Ventas</p>
-        <a href="../controlador/controladorconsultatraeliminados.php" class="btn btn-primary">Ventas</a>
+        <a href="" class="btn btn-primary">Ventas</a>
       </div>
     </div>
   </div>
